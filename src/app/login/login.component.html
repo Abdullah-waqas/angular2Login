@@ -1,0 +1,18 @@
+<input class="form-control" type="text" name="email" [(ngModel)]="cred.email" placeholder="Email">
+<input class="form-control" type="password" name="password" [(ngModel)]="cred.password" placeholder="Password">
+
+<button type="button" (click)="onLogin()" class="btn btn-primary" [disabled]="disabled">Login</button>
+
+
+<!--<form method="POST" role="form">
+  <div class="form-group">
+    <input type="text" class="form-control" name="name" [(ngModel)]="user.name">
+  </div>
+  <div class="form-group">
+    <div class="input-group">
+      <input type="password" class="form-control" name="password" [(ngModel)]="user.password">
+    </div>
+  </div>
+  <small><a class="btn btn-link" (click)="activateUser()">{{'LOGIN.FORGET_PASSWORD' | translate}}</a></small>
+  <button type="submit" class="btn btn-primary" (click)="onLogin()">Login</button>
+</form>-->
